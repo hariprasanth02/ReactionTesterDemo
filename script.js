@@ -1,5 +1,5 @@
- var startTime;
-        
+var startTime;
+
         function getRandomColor() {
             var colors = ["red", "blue", "green", "yellow", "purple"];
             return colors[Math.floor(Math.random() * colors.length)];
@@ -7,9 +7,11 @@
 
         function moveShape() {
             var shape = document.getElementById("shape");
-            var left = Math.random() * (window.innerWidth - 100);
-            var top = Math.random() * (window.innerHeight - 100);
-            var wh = (Math.random() * 200) + 50; 
+            var wh = (Math.random() * 200) + 50;  
+
+            // Center horizontally and keep it near the top
+            var left = (window.innerWidth / 2) - (wh / 2); // Center horizontally
+            var top = 50; // Fixed near the top
 
             shape.style.left = left + "px";
             shape.style.top = top + "px";
@@ -27,7 +29,7 @@
             document.getElementById("reactionTime").textContent = "Your reaction time: " + reactionTime + " seconds";
 
             this.style.display = "none";
-            setTimeout(moveShape, Math.random() * 2000 + 500); // Random delay before showing again
+            setTimeout(moveShape, Math.random() * 1000 + 300); // Random delay before showing again
         };
 
         moveShape();
