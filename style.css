@@ -2,7 +2,9 @@
             position: absolute;
             display: none;
             background-color: red; /* Default color */
-            border-radius: 50%; /* Makes it a circle */
+/*             border-radius: 50%; /* Makes it a circle */ */
+            width:100px;
+            height:100px
         }
         #reactionTime {
             font-size: 20px;
