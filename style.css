@@ -1,11 +1,7 @@
 #shape {
-            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
             display: none;
-            background-color: red; /* Default color */
-           border-radius: 0px; /* Makes it a square */\
-        }
-        #reactionTime {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 20px;
         }
