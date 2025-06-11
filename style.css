@@ -1,5 +1,5 @@
 #shape {
-            position: absolute;
+            position: relative;
             display: none;
             background-color: red; /* Default color */
            border-radius: 0px; /* Makes it a square */\
